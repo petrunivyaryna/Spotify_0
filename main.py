@@ -7,7 +7,7 @@ To create this app we use module main.py, which takes the name of the artist,
 searches for the necessary information and creates a map. To design this app
 the module uses html files and css file.
 
-link to github: 
+link to github: https://github.com/yarkapetruniv/Spotify_0.git
 """
 from flask import Flask, render_template, request
 import my_map

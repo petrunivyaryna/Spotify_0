@@ -5,7 +5,7 @@ This module works with json file which is obtained using the Spotify API.
 The input is the name of the artist. The module has to find the most popular
 of artist's song and then find all available markets for this song and map them.
 
-link to github: ...
+link to github: https://github.com/yarkapetruniv/Spotify_0.git
 """
 import os
 import base64

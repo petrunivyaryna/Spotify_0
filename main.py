@@ -24,6 +24,9 @@ def do_search():
     artist_id = my_map.search_for_artist(artist)[1]
     most_popular_song = my_map.get_song(artist_id)
     available_markets = my_map.get_available_markets(most_popular_song, artist_id)
+    if len(available_markets) > 100:
+        my_map.create_map(available_markets[:100], artist_name, most_popular_song)
+        return render_template('My_map.html')
     my_map.create_map(available_markets, artist_name, most_popular_song)
     return render_template('My_map.html')
 

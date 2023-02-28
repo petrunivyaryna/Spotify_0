@@ -1,12 +1,12 @@
 body {
     font-family: Georgia, serif;
     font-size: medium;
-    background-color: powderblue;
+    background-color: white;
     margin-top: 4%;
     margin-bottom:    4%;
     margin-left:      10%;
     margin-right:     10%;
-    border: solid darkblue;
+    border: solid rgb(122, 21, 21);
     padding: 15px 15px 15px 15px;
 }
 table {
@@ -28,7 +28,7 @@ table {
     border-collapse:    collapse;
 }
 td, th {
-    border:             solid darkblue;
+    border:             solid rgb(122, 21, 21);
 }
 
 /*** Inputs ***/

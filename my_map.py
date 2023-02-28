@@ -134,10 +134,13 @@ def create_map(markets: list, name: str, song: str):
         country = pycountry.countries.get(alpha_2 = market)
         if country:
             location = RateLimiter(geolocator.geocode, min_delay_seconds=1)(market)
-            iframe = folium.IFrame(html=html.format(country.name, song, name),
-                                width=300, height=100)
-            layer.add_child(folium.Marker(location = [location.latitude, location.longitude],
-                            popup=folium.Popup(iframe), icon=folium.Icon(color = 'black', icon = 'music')))
+            if location is not None:
+                iframe = folium.IFrame(html=html.format(country.name, song, name),
+                                    width=300, height=100)
+                layer.add_child(folium.Marker(location = [location.latitude, location.longitude],
+                                            popup=folium.Popup(iframe), icon=folium.Icon(color = 'black', icon = 'music')))
+            else:
+                continue
         else:
             continue
     

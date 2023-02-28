@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    height: 100vh;
+    background-color:rgba(0,8,51,0.9);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 45px;
+    letter-spacing: 2px;
+
+}
+
+span
+{
+    color: #f44366;
+}
+
+.search-field
+{
+    height: 40px;
+    padding: 10px;
+}
+
+.skills
+{
+    width: 600px;
+
+}
+
+.search-btn
+{
+    height: 60px;
+    width: 150px;
+    background: #f44366;
+    border: none;
+    color: #fff;
+}
+
+.search-btn:hover
+{
+    background: #bb0d00;
+    cursor: pointer;
+}
+
+.form-box
+{
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px 50px;
+}

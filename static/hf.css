@@ -1,41 +1,64 @@
 body {
-    font-family: Georgia, serif;
-    font-size: medium;
-    background-color: white;
-    margin-top: 4%;
-    margin-bottom:    4%;
-    margin-left:      10%;
-    margin-right:     10%;
-    border: solid rgb(122, 21, 21);
-    padding: 15px 15px 15px 15px;
-}
-table {
-    margin-left:      200px;
-    margin-right:     100px;
-}
-td, th {
-    padding:          5px;
-    text-align:       left;
+    margin: 0;
+    padding: 0;
 }
 
-/*** Tables ***/
-table {
-    font-size:          1em;
-    background-color:   #fbfdff;
-    border:             1px solid #faafaf;
-    color:              #070606;
-    padding:            5px 5px 2px;
-    border-collapse:    collapse;
-}
-td, th {
-    border:             solid rgb(122, 21, 21);
+.header
+{
+    height: 100vh;
+    background-color:rgba(0,8,51,0.9);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
 }
 
-/*** Inputs ***/
-input[type=text] {
-    font-size:        115%;
-    width:            30em;
-  }
-  input[type=submit] {
-    font-size:        125%;
-  }
+h1
+{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 45px;
+    letter-spacing: 2px;
+
+}
+
+span
+{
+    color: #f44366;
+}
+
+.search-field
+{
+    height: 40px;
+    padding: 10px;
+}
+
+.skills
+{
+    width: 600px;
+
+}
+
+.search-btn
+{
+    height: 60px;
+    width: 150px;
+    background: #f44366;
+    border: none;
+    color: #fff;
+}
+
+.search-btn:hover
+{
+    background: #bb0d00;
+    cursor: pointer;
+}
+
+.form-box
+{
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px 50px;
+}
